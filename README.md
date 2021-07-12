@@ -1,2 +1,1 @@
-# JimmyHeller_3_30062021
-Projet 3 de la formation développeur web Openclassrooms
+#https://jimmyhlr.github.io/JimmyHeller_3_30062021/
