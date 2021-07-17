@@ -1,11 +1,14 @@
 #functionment {
     font-family: Roboto;
+
     #functionment_step {
         display: flex;
         flex-flow: column;
+
         .step {
             margin: 1em;
             display: flex;
+
             .step_number {
                 display: flex;
                 line-height: 1.5em;
@@ -24,6 +27,7 @@
                 border-radius: 1.5em;
                 display: flex;
                 justify-content: space-around;
+                
                 .step_logo {
                     transform: translate(-50%, 35%);
                 }
