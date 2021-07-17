@@ -1,6 +1,10 @@
 @charset "UTF-8";
-/*couleurs*/
 /*centrer l'élément*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /*logo et titres*/
 @font-face {
   font-family: "Roboto";
@@ -13,7 +17,43 @@
   src: url("../../public/fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 
+/*bouton header "Explorer nos restaurants"*/
+#search {
+  background-color: #FF79DA;
+  padding: 1em;
+  border-radius: 3em;
+}
+
+#search:link {
+  color: white;
+}
+
+#search:hover {
+  background-color: #9356DC;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 header {
+  font-family: Roboto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,13 +63,15 @@ header {
           flex-flow: column;
 }
 
-header #logo1 {
-  margin-left: 50%;
-  margin-right: 50%;
+header .logo_header {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header #location {
-  font-family: Roboto;
+  background-color: #eaeaea;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +79,116 @@ header #location {
   -webkit-box-direction: normal;
       -ms-flex-flow: space-between;
           flex-flow: space-between;
+}
+
+header .slogan_and_search {
+  background-color: #f6f6f6;
+}
+
+header .slogan_and_search #slogan {
+  font-size: 1em;
+}
+
+header .slogan_and_search #slogan h1 {
+  font-size: 1.5em;
+}
+
+#functionment {
+  font-family: Roboto;
+}
+
+#functionment #functionment_step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+#functionment #functionment_step .step {
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#functionment #functionment_step .step .step_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5em;
+  background-color: #9356DC;
+  color: white;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translate(50%, 80%);
+          transform: translate(50%, 80%);
+}
+
+#functionment #functionment_step .step .step_description {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 4em;
+  border-radius: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#functionment #functionment_step .step .step_description .step_logo {
+  -webkit-transform: translate(-50%, 35%);
+          transform: translate(-50%, 35%);
+}
+
+#functionment #functionment_step .step .step_description .fa-mobile-alt, #functionment #functionment_step .step .step_description .fa-ellipsis-v, #functionment #functionment_step .step .step_description .fa-bars {
+  color: #7e7e7e;
+}
+
+#functionment #functionment_step .step .step_description .fa-store {
+  color: #9356DC;
+}
+
+#functionment #functionment_step .step .step_description .step2_logo {
+  -webkit-transform: translate(-40%, 35%);
+          transform: translate(-40%, 35%);
+}
+
+#functionment #functionment_step .step .step_description .fa-ellipsis-v {
+  width: 0.2em;
+}
+
+#functionment #functionment_step .step .step_description .step_text {
+  -webkit-transform: translate(-50%, 35%);
+          transform: translate(-50%, 35%);
+  font-weight: bold;
+}
+
+#functionment #functionment_step .step .step3 {
+  background-color: #f5edff;
+}
+
+footer {
+  background-color: #353535;
+}
+
+footer #logo_footer {
   margin-left: 50%;
   margin-right: 50%;
+}
+
+footer__ul {
+  text-decoration: none;
+}
+
+footer__li {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

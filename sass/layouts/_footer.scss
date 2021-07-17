@@ -1,0 +1,9 @@
+footer {
+    background-color: $dark;
+    #logo_footer {
+        @include center; }
+    &__ul {
+        text-decoration: none; }
+        &__li {
+            text-decoration: none; }
+    }

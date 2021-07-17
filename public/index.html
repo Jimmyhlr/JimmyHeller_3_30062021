@@ -12,8 +12,8 @@
         <header>
 
             <!--logo ohmyfood haut de page-->
-            <div id="logo1">
-                <a href="index.html"><img src="Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="logo ohmyfood"></a>
+            <div id="#">
+                <a href="index.html"><img src="Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="logo ohmyfood" class="logo_header"></a>
             </div>
             <!--localisation haut de page-->
             <div id="location">
@@ -21,14 +21,14 @@
                 <div class="#">Paris, Belleville</div>
             </div>
             <!--slogan du site et bouton redirection vers restaurants-->
-            <div class=#>
+            <div class=slogan_and_search>
                 <!--slogan du site-->
-                <div id="#">
+                <div id="slogan">
                     <h1>Réservez le menu qui vous convient</h1>
                     <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                 </div>
                 <!--bouton redirection vers restaurants-->
-                <a href="#">Explorer nos restaurants</a>
+                <a href="#" id="search">Explorer nos restaurants</a>
             </div>
 
         </header>
@@ -36,28 +36,40 @@
         <main>
 
             <!--bloc fonctionnement-->
-            <div id="#">
+            <div id="functionment">
                 <h2>Fonctionnement</h2>
                 <!--étapes de fonctionnement-->
-                <div id="#">
+                <div id="functionment_step">
                     <!--étape 1 - choisissez un restaurant-->
-                    <div class="#">
-                        <div class="#">1</div>
-                        <i class="fas fa-mobile-alt"></i>
-                        <div class="#">Choisissez un restaurant</div>
+                    <div class="step">
+                        <div class="step_number">1</div>
+                        <div class="step_description">
+                            <div class="step_logo">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="step_text">Choisissez un restaurant</div>    
+                        </div>
                     </div>
                     <!--étape 2 - composez votre menu-->
-                    <div class="#">
-                        <div class="#">2</div>
-                        <i class="fas fa-ellipsis-v"></i>
-                        <i class="fas fa-bars"></i>
-                        <div class="#">Choisissez un restaurant</div>
+                    <div class="step">
+                        <div class="step_number">2</div>
+                        <div class="step_description">
+                            <div class="step2_logo">
+                                <i class="fas fa-ellipsis-v"></i>
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <div class="step_text">Choisissez un restaurant</div>
+                        </div>
                     </div>
                     <!--étape 3 - dégustez au restaurant-->
-                    <div class="#">
-                        <div class="#">3</div>
-                        <i class="fas fa-store"></i>
-                        <div class="#">Dégustez au restaurant</div>
+                    <div class="step">
+                        <div class="step_number">3</div>
+                        <div class="step_description step3">
+                            <div class="step_logo">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <div class="step_text">Dégustez au restaurant</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,11 +132,11 @@
         <footer>
 
             <!--logo ohmyfood footer-->
-            <div class="#">
-                <img src="Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="logo Ohmyfood">
+            <div class="logo_footer">
+                OHMYFOOD
             </div>
             <!--liste footer-->
-            <ul class=#>
+            <ul>
                 <!--proposer un restaurant-->
                 <li>
                     <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
