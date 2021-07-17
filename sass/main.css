@@ -1,1 +1,43 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+/*couleurs*/
+/*centrer l'élément*/
+/*logo et titres*/
+@font-face {
+  font-family: "Roboto";
+  src: url("../../public/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+/*texte*/
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../public/fonts/Shrikhand/Shrikhand-Regular.ttf");
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+header #logo1 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+header #location {
+  font-family: Roboto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: space-between;
+          flex-flow: space-between;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+/*# sourceMappingURL=main.css.map */
