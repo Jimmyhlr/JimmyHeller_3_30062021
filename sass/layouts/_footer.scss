@@ -1,9 +1,14 @@
 footer {
     background-color: $dark;
-    #logo_footer {
-        @include center; }
-    &__ul {
-        text-decoration: none; }
-        &__li {
-            text-decoration: none; }
+}
+
+    .logo_footer {
+        color: white;
+        padding-left: 1em;
+    }
+
+    li {
+            text-decoration: none;
+            list-style-type: none; 
+            color: white;
     }

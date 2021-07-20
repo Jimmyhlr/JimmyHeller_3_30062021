@@ -1,12 +1,17 @@
-#functionment {
+#usage {
+    @include padding;
     font-family: Roboto;
 
-    #functionment_step {
+    #usage_step {
         display: flex;
         flex-flow: column;
+        margin-bottom: 3em;
+        margin-right: 2em;
+
 
         .step {
             margin: 1em;
+            width: 100%;
             display: flex;
 
             .step_number {
@@ -29,7 +34,8 @@
                 justify-content: space-around;
                 
                 .step_logo {
-                    transform: translate(-50%, 35%);
+                    text-align: center;
+                    margin: auto;
                 }
                     .fa-mobile-alt, .fa-ellipsis-v, .fa-bars {
                         color: #7e7e7e;
@@ -38,14 +44,21 @@
                         color: $primary;
                     }
                 .step2_logo {
-                    transform: translate(-40%, 35%);
+                    text-align: center;
+                    margin: auto;
                 }
                     .fa-ellipsis-v {
                         width: 0.2em;
                     }
                 .step_text {
-                    transform: translate(-50%, 35%);
+                    text-align: center;
+                    margin: auto;
                     font-weight: bold;
+                }
+
+                .blank {
+                    text-align: center;
+                    margin: auto;
                 }
             }
             .step3 {

@@ -1,22 +1,40 @@
 header {
     font-family: Roboto;
+    text-align: center;
     display: flex;
     flex-flow: column;
     .logo_header {
         width: 45%;
         display: flex;
+        text-align: center;
+        margin: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
     #location {
         background-color: $grey1;
         display: flex;
         flex-flow: space-between;
+        text-align: center;
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
     .slogan_and_search {
         background-color: $grey2;
+        height: 18em;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        padding-bottom: 2em;
         #slogan {
             font-size: 1em;
+            margin-left: 3em;
+            margin-right: 3em;
             h1 {
                 font-size: 1.5em;
+                margin-left: 3em;
+                margin-right: 3em;
             }
         }
     }

@@ -1,4 +1,5 @@
 #section_restaurants {
+    @include padding;
     font-family: Roboto;
     background-color: $grey2;
     padding-top: 2em;
@@ -6,29 +7,54 @@
     h2 {
         font-weight: bold;
     }
+}
 
-    .restaurants {
-        display: flex;
-        .bloc_img {
-            
-            .restaurant_img {
-                object-fit: cover;
-                align-self: center;
-                margin-left: auto;
-                margin-right: auto;
-                width: 40vw;
-                max-height: 60vh;
-            }
+.restaurant {
+    background-color: white;
+    border-radius: 1em;
+    height: 25em;
+    width: 100%;
+    margin-bottom: 2em;
+}
 
-            .new {
-
-
-            }
-        }
-
-        .bloc_txt {
-
-
-        }
+.bloc_img {
+    .restaurant_img {
+        object-fit: cover;
+        align-self: center;
+        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 15em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
     }
+    .new {
+        color: #356d60;
+        background-color: $tertiary;
+        width: 5em;
+        height: 1.5em;
+        line-height: 1.3em;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        top: -14em;
+        left: 22em;
+
+    }
+}
+
+.bloc_text {
+    display: flex;
+}
+
+.restaurant_name {
+    line-height: 0.5em;
+    color: black;
+
+}
+
+.fa-heart {
+    color: black;
+    font-size: 2em;
 }
