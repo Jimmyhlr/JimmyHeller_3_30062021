@@ -229,7 +229,7 @@ header .slogan_and_search #slogan h1 {
 .restaurant {
   background-color: white;
   border-radius: 1em;
-  height: 25em;
+  height: auto;
   width: 100%;
   margin-bottom: 2em;
 }
@@ -253,20 +253,26 @@ header .slogan_and_search #slogan h1 {
 .bloc_img .new {
   color: #356d60;
   background-color: #99E2D0;
-  width: 5em;
-  height: 1.5em;
-  line-height: 1.3em;
+  width: 6em;
+  height: 2em;
+  line-height: 2em;
   text-align: center;
   font-weight: bold;
   position: relative;
   top: -14em;
-  left: 22em;
+  left: 21em;
 }
 
-.bloc_text {
+.bloc_txt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
 }
 
 .restaurant_name {
@@ -277,6 +283,9 @@ header .slogan_and_search #slogan h1 {
 .fa-heart {
   color: black;
   font-size: 2em;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 footer {
