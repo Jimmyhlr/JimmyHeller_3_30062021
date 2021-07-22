@@ -96,6 +96,8 @@ header #location {
   width: 100%;
   padding-top: 1em;
   padding-bottom: 1em;
+  -webkit-box-shadow: inset 0px 15px 8px -10px #CCC;
+          box-shadow: inset 0px 15px 8px -10px #CCC;
 }
 
 header #location .fa-map-marker-alt {
@@ -248,6 +250,10 @@ header .slogan_and_search #slogan h1 {
   margin-bottom: 2em;
 }
 
+.bloc_img {
+  position: relative;
+}
+
 .bloc_img .restaurant_img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -272,8 +278,8 @@ header .slogan_and_search #slogan h1 {
   line-height: 2em;
   text-align: center;
   font-weight: bold;
-  position: relative;
-  top: -14em;
+  position: absolute;
+  top: 10%;
   left: 75%;
 }
 
@@ -300,6 +306,13 @@ header .slogan_and_search #slogan h1 {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.fa-heart:hover {
+  color: #FF79DA;
+  color: -moz-linear-gradient(-45deg, #FF79DA 0%, #9356DC 100%);
+  color: -webkit-linear-gradient(-45deg, #FF79DA 0%, #9356DC 100%);
+  color: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
 }
 
 footer {

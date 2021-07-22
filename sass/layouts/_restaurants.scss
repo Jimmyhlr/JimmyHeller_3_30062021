@@ -18,6 +18,7 @@
 }
 
 .bloc_img {
+    position: relative;
     .restaurant_img {
         object-fit: cover;
         align-self: center;
@@ -37,8 +38,8 @@
         line-height: 2em;
         text-align: center;
         font-weight: bold;
-        position: relative;
-        top: -14em;
+        position: absolute;
+        top: 10%;
         left: 75%;
 
     }
@@ -64,4 +65,7 @@
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
+    &:hover {
+        @include gradient2;
+    }
 }
