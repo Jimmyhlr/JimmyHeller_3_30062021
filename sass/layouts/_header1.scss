@@ -19,6 +19,15 @@ header {
         width: 100%;
         padding-top: 1em;
         padding-bottom: 1em;
+        .fa-map-marker-alt {
+            padding-right: 1em;
+            text-align: center;
+            margin-left: auto;
+        }
+        .location_text {
+            text-align: center;
+            margin-right: auto;
+        }
     }
     .slogan_and_search {
         background-color: $grey2;

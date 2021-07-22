@@ -95,6 +95,17 @@ header #location {
   padding-bottom: 1em;
 }
 
+header #location .fa-map-marker-alt {
+  padding-right: 1em;
+  text-align: center;
+  margin-left: auto;
+}
+
+header #location .location_text {
+  text-align: center;
+  margin-right: auto;
+}
+
 header .slogan_and_search {
   background-color: #f6f6f6;
   height: 18em;
