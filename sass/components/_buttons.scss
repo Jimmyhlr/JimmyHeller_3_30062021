@@ -1,12 +1,13 @@
 /*bouton header "Explorer nos restaurants"*/
 #search {
-    background-color: $secondary;
+    @include gradient;
     padding: 1em;
     border-radius: 3em;
     width: 15em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    color: white;
     &:link {
         color: white;
     }

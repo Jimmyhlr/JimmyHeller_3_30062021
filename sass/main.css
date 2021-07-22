@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*centrer l'élément*/
 /*padding left+right*/
+/*gradient color*/
 body {
   margin: 0;
   padding: 0em;
@@ -20,13 +21,15 @@ body {
 
 /*bouton header "Explorer nos restaurants"*/
 #search {
-  background-color: #FF79DA;
+  background: #FF79DA;
+  background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
   padding: 1em;
   border-radius: 3em;
   width: 15em;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  color: white;
 }
 
 #search:link {

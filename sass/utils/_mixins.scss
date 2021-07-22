@@ -9,3 +9,11 @@
     padding-left: 1em;
     padding-right: 1em;
 }
+
+/*gradient color*/
+@mixin gradient {
+    background: #FF79DA;
+    background: -moz-linear-gradient(-45deg, #FF79DA 0%, #9356DC 100%);
+    background: -webkit-linear-gradient(-45deg, #FF79DA 0%, #9356DC 100%);
+    background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+}
