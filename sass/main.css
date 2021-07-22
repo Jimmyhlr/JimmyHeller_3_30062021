@@ -260,7 +260,7 @@ header .slogan_and_search #slogan h1 {
   font-weight: bold;
   position: relative;
   top: -14em;
-  left: 21em;
+  left: 75%;
 }
 
 .bloc_txt {
@@ -290,16 +290,34 @@ header .slogan_and_search #slogan h1 {
 
 footer {
   background-color: #353535;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: Roboto;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+footer a {
+  color: white;
 }
 
 .logo_footer {
   color: white;
+  font-family: Shrikhand;
   padding-left: 1em;
 }
 
-li {
+ul {
   text-decoration: none;
-  list-style-type: none;
-  color: white;
+  list-style: none;
+  padding-left: 1em;
+}
+
+.fa-utensils {
+  padding-right: 0.7em;
+}
+
+.fa-handshake {
+  padding-right: 0.3em;
 }
 /*# sourceMappingURL=main.css.map */

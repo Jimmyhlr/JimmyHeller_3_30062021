@@ -1,14 +1,31 @@
 footer {
     background-color: $dark;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: Roboto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    & a {
+        color: white;
+    }
 }
 
-    .logo_footer {
-        color: white;
-        padding-left: 1em;
-    }
+.logo_footer {
+    color: white;
+    font-family: Shrikhand;
+    padding-left: 1em;
+}
 
-    li {
-            text-decoration: none;
-            list-style-type: none; 
-            color: white;
-    }
+ul {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 1em;
+}
+
+.fa-utensils {
+    padding-right: 0.7em;
+}
+
+.fa-handshake {
+    padding-right: 0.3em;
+}
