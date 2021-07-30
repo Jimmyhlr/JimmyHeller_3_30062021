@@ -1,0 +1,58 @@
+.sous_body1
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.2em; /*bordure intérieure*/
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
+    background-color: white;
+    width: 30%;
+    height: 13em;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.2s;
+}
+
+.sous_body1:hover
+{
+    transform: scale(1.1);
+}
+
+/*animation valider menu du restaurant*/
+.menu_choice:hover {
+    .dishandprice {
+        width: 82%;              
+        .dish {
+            width: 90%;
+        }
+        .price {
+            width: 10%;
+        }
+    }
+    .check_animation {
+        background-color: $tertiary;
+        display: flex;
+        height: 100%;
+        width: 18%;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+
+        transform-origin: 100% 0%;
+        transform: scaleX(1);
+        transition: transform 0.3s;
+        .fa-check-circle {
+            margin: auto;
+            font-size: 1.5em;
+        }
+    
+    }
+}
+
+.check_animation {
+    transform: scaleX(0);
+    .fa-check-circle {
+        color: white;
+    }
+}

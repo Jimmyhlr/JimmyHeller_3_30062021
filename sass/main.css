@@ -88,6 +88,81 @@ a:active {
   text-decoration: none;
 }
 
+.sous_body1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.2em;
+  /*bordure intérieure*/
+  border-radius: 1em;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
+  background-color: white;
+  width: 30%;
+  height: 13em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.sous_body1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*animation valider menu du restaurant*/
+.menu_choice:hover .dishandprice {
+  width: 82%;
+}
+
+.menu_choice:hover .dishandprice .dish {
+  width: 90%;
+}
+
+.menu_choice:hover .dishandprice .price {
+  width: 10%;
+}
+
+.menu_choice:hover .check_animation {
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 18%;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.menu_choice:hover .check_animation .fa-check-circle {
+  margin: auto;
+  font-size: 1.5em;
+}
+
+.check_animation {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.check_animation .fa-check-circle {
+  color: white;
+}
+
 header {
   font-family: Roboto;
   text-align: center;
@@ -380,7 +455,7 @@ header .slogan_and_search #slogan h1 {
   background-image: url(../../public/Maquettes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 15em;
+  height: 18em;
 }
 
 .main2 {
@@ -390,6 +465,7 @@ header .slogan_and_search #slogan h1 {
   padding-top: 2em;
   border-top-left-radius: 3em;
   border-top-right-radius: 3em;
+  margin-top: -3em;
 }
 
 .main2 .restaurant_name {
@@ -405,10 +481,14 @@ header .slogan_and_search #slogan h1 {
 
 .main2 .restaurant_name h2 {
   font-size: 2em;
+  line-height: 1em;
 }
 
 .main2 h3 {
   border-bottom: solid #99E2D0;
+  border-width: 0.2em;
+  width: 2.5em;
+  padding-bottom: 0.2em;
 }
 
 .main2 .menu_category {
@@ -432,28 +512,46 @@ header .slogan_and_search #slogan h1 {
           justify-content: space-between;
   height: 5em;
   margin-bottom: 1em;
+  color: black;
 }
 
-.main2 .menu_category .sub_category .menu_choice .dish {
+.main2 .menu_category .sub_category .menu_choice .dishandprice {
+  background-color: white;
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.main2 .menu_category .sub_category .menu_choice .dishandprice .dish {
   padding-left: 1em;
+  padding-right: 1em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 90%;
 }
 
-.main2 .menu_category .sub_category .menu_choice .dish h4 {
+.main2 .menu_category .sub_category .menu_choice .dishandprice .dish h4 {
   line-height: 1em;
   margin-top: 0;
   margin-bottom: 0.5em;
 }
 
-.main2 .menu_category .sub_category .menu_choice .price {
+.main2 .menu_category .sub_category .menu_choice .dishandprice .price {
   text-align: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-right: 1em;
-  padding-bottom: 1em;
   font-weight: bold;
+  width: 10%;
+  padding-bottom: 1em;
+  padding-right: 1em;
 }
 
 .restaurant_img2 {
