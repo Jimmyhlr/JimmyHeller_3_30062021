@@ -1,7 +1,7 @@
 /*animation valider menu du restaurant*/
 .menu_choice:hover {
     .dishandprice {
-        width: 82%;              
+        max-width: 82%;              
         .dish {
             width: 90%;
         }
@@ -17,9 +17,10 @@
         border-top-right-radius: 1em;
         border-bottom-right-radius: 1em;
 
+        transition: transform;
+        transition-duration: 0.3s;
         transform-origin: 100% 0%;
         transform: scaleX(1);
-        transition: transform 0.3s;
         .fa-check-circle {
             margin: auto;
             font-size: 1.5em;
@@ -31,9 +32,83 @@
 }
 
 .check_animation {
+    transition: transform 0.3s;
     transform: scaleX(0);
     .fa-check-circle {
         color: white;
         transform: rotate(-180deg);
     }
+}
+
+/*animation affichage du menu*/
+.fadein1 {
+    animation-name: fade-in; 
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadein2 {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadein3 {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 0.4s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadein4 {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 0.6s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadein5 {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 0.8s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadein6 {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadein7 {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 1.2s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadein8 {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 1.4s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadein9 {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 1.6s;
+    opacity: 1;
+    animation-fill-mode: forwards;
 }
