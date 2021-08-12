@@ -84,3 +84,16 @@
     height: 10em;
     object-fit: cover;
 }
+
+@media (min-width: 750px) {
+    .div_menus {
+        display: flex;
+        justify-content: space-around;
+        .menu_category {
+            width: 30%;
+            .sub_category {
+                width: 100%;
+            }
+        }
+    }
+}

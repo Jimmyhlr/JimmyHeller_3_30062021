@@ -1,20 +1,41 @@
 /*bouton header "Explorer nos restaurants" page 1*/
-#search {
-    @include gradient;
-    padding: 1em;
-    border-radius: 3em;
-    width: 15em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    &:link {
+@media (max-width: 750px) {
+    #search {
+        @include gradient;
+        padding: 1em;
+        border-radius: 3em;
+        width: 15em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         color: white;
-    }
-    &:hover {
-        background-color: $primary;
+        &:link {
+            color: white;
+        }
+        &:hover {
+            background-color: $primary;
+        }
     }
 }
+
+@media (min-width: 750px) {
+    #search {
+        @include gradient;
+        padding: 1em;
+        border-radius: 3em;
+        width: 15em;
+        text-align: center;
+        color: white;
+        margin-top: 1.5em;
+        &:link {
+            color: white;
+        }
+        &:hover {
+            background-color: $primary;
+        }
+    }    
+}
+
 
 /*bouton "Commander" pages menu restaurants*/
 .buttondiv {

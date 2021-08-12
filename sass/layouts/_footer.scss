@@ -13,13 +13,24 @@ footer {
 .logo_footer {
     color: white;
     font-family: Shrikhand;
-    padding-left: 1em;
+}
+
+@media (max-width: 750px) {
+    .logo_footer {
+        padding-left: 1em;
+    }
 }
 
 ul {
     text-decoration: none;
     list-style: none;
-    padding-left: 1em;
+    padding-left: 0;
+}
+
+@media (max-width: 750px) {
+    ul {
+        padding-left: 1em;
+    }
 }
 
 .fa-utensils {

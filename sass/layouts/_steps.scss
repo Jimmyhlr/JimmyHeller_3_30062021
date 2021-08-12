@@ -3,8 +3,6 @@
     font-family: Roboto;
 
     #usage_step {
-        display: flex;
-        flex-flow: column;
         margin-bottom: 3em;
         margin-right: 2em;
 
@@ -65,5 +63,30 @@
                 background-color: $primary-shadow;
             }
         }
+    }
+}
+
+@media (max-width: 1200px) {
+    #usage {
+        #usage_step {
+            display: flex;
+            flex-flow: column;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #usage {
+        #usage_step {
+            display: flex;
+            flex-flow: row;
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    #usage {
+        padding-left: 3em;
+        padding-right: 3em;
     }
 }

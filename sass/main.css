@@ -59,8 +59,16 @@
 
 */
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 2000px;
   padding: 0em;
+}
+
+@media (min-width: 750px) {
+  header, footer {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 }
 
 /*logo et titres*/
@@ -76,24 +84,43 @@ body {
 }
 
 /*bouton header "Explorer nos restaurants" page 1*/
-#search {
-  background: #FF79DA;
-  background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
-  padding: 1em;
-  border-radius: 3em;
-  width: 15em;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
+@media (max-width: 750px) {
+  #search {
+    background: #FF79DA;
+    background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+    padding: 1em;
+    border-radius: 3em;
+    width: 15em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+  #search:link {
+    color: white;
+  }
+  #search:hover {
+    background-color: #9356DC;
+  }
 }
 
-#search:link {
-  color: white;
-}
-
-#search:hover {
-  background-color: #9356DC;
+@media (min-width: 750px) {
+  #search {
+    background: #FF79DA;
+    background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+    padding: 1em;
+    border-radius: 3em;
+    width: 15em;
+    text-align: center;
+    color: white;
+    margin-top: 1.5em;
+  }
+  #search:link {
+    color: white;
+  }
+  #search:hover {
+    background-color: #9356DC;
+  }
 }
 
 /*bouton "Commander" pages menu restaurants*/
@@ -313,82 +340,127 @@ a:active {
           animation-fill-mode: forwards;
 }
 
-header {
-  font-family: Roboto;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+@media (min-width: 750px) {
+  header {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 1em;
+  }
+  header .logo_header {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  header #location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  header #location .fa-map-marker-alt {
+    padding-right: 1em;
+    text-align: center;
+  }
+  header .slogan_and_search {
+    height: 12em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  header .slogan_and_search #slogan {
+    font-size: 1em;
+  }
+  header .slogan_and_search #slogan h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
 }
 
-header .logo_header {
-  width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-header #location {
-  background-color: #eaeaea;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: space-between;
-          flex-flow: space-between;
-  text-align: center;
-  width: 100%;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  -webkit-box-shadow: inset 0px 15px 8px -10px #CCC;
-          box-shadow: inset 0px 15px 8px -10px #CCC;
-}
-
-header #location .fa-map-marker-alt {
-  padding-right: 1em;
-  text-align: center;
-  margin-left: auto;
-}
-
-header #location .location_text {
-  text-align: center;
-  margin-right: auto;
-}
-
-header .slogan_and_search {
-  background-color: #f6f6f6;
-  height: 18em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-bottom: 2em;
-}
-
-header .slogan_and_search #slogan {
-  font-size: 1em;
-  margin-left: 3em;
-  margin-right: 3em;
-}
-
-header .slogan_and_search #slogan h1 {
-  font-size: 1.5em;
-  margin-left: 3em;
-  margin-right: 3em;
+@media (max-width: 750px) {
+  header {
+    font-family: Roboto;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  header .logo_header {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  header #location {
+    background-color: #eaeaea;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: space-between;
+            flex-flow: space-between;
+    text-align: center;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    -webkit-box-shadow: inset 0px 15px 8px -10px #CCC;
+            box-shadow: inset 0px 15px 8px -10px #CCC;
+  }
+  header #location .fa-map-marker-alt {
+    padding-right: 1em;
+    text-align: center;
+    margin-left: auto;
+  }
+  header #location .location_text {
+    text-align: center;
+    margin-right: auto;
+  }
+  header .slogan_and_search {
+    background-color: #f6f6f6;
+    height: 18em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 2em;
+  }
+  header .slogan_and_search #slogan {
+    font-size: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  header .slogan_and_search #slogan h1 {
+    font-size: 1.5em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
 }
 
 .header2 {
@@ -398,12 +470,15 @@ header .slogan_and_search #slogan h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .header2 .backbutton {
   color: black;
   text-align: center;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 1.5em;
 }
 
@@ -420,7 +495,8 @@ header .slogan_and_search #slogan h1 {
 
 .header2 .blank2 {
   text-align: center;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #usage {
@@ -430,13 +506,6 @@ header .slogan_and_search #slogan h1 {
 }
 
 #usage #usage_step {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
   margin-bottom: 3em;
   margin-right: 2em;
 }
@@ -515,6 +584,37 @@ header .slogan_and_search #slogan h1 {
   background-color: #f5edff;
 }
 
+@media (max-width: 1200px) {
+  #usage #usage_step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  #usage #usage_step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+}
+
+@media (min-width: 750px) {
+  #usage {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
 #section_restaurants {
   padding-left: 1em;
   padding-right: 1em;
@@ -526,6 +626,13 @@ header .slogan_and_search #slogan h1 {
 
 #section_restaurants h2 {
   font-weight: bold;
+}
+
+@media (min-width: 750px) {
+  #section_restaurants {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 }
 
 .restaurant {
@@ -599,6 +706,40 @@ header .slogan_and_search #slogan h1 {
   color: -moz-linear-gradient(-45deg, #FF79DA 0%, #9356DC 100%);
   color: -webkit-linear-gradient(-45deg, #FF79DA 0%, #9356DC 100%);
   color: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+}
+
+@media (max-width: 319px) {
+  .bloc_img .new {
+    left: 55%;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 367px) {
+  .bloc_img .new {
+    left: 65%;
+  }
+}
+
+@media (min-width: 367px) {
+  .bloc_img .new {
+    left: 70%;
+  }
+}
+
+@media (min-width: 750px) {
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .restaurants .restaurant {
+    max-width: 45%;
+  }
 }
 
 .imgandmain .backgroundimg1 {
@@ -712,6 +853,22 @@ header .slogan_and_search #slogan h1 {
      object-fit: cover;
 }
 
+@media (min-width: 750px) {
+  .div_menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .div_menus .menu_category {
+    width: 30%;
+  }
+  .div_menus .menu_category .sub_category {
+    width: 100%;
+  }
+}
+
 footer {
   background-color: #353535;
   padding-top: 1em;
@@ -728,13 +885,24 @@ footer a {
 .logo_footer {
   color: white;
   font-family: Shrikhand;
-  padding-left: 1em;
+}
+
+@media (max-width: 750px) {
+  .logo_footer {
+    padding-left: 1em;
+  }
 }
 
 ul {
   text-decoration: none;
   list-style: none;
-  padding-left: 1em;
+  padding-left: 0;
+}
+
+@media (max-width: 750px) {
+  ul {
+    padding-left: 1em;
+  }
 }
 
 .fa-utensils {

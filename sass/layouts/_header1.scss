@@ -1,52 +1,89 @@
-header {
-    font-family: Roboto;
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    .logo_header {
-        width: 45%;
-        display: flex;
-        text-align: center;
-        margin: auto;
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-    #location {
-        background-color: $grey1;
-        display: flex;
-        flex-flow: space-between;
-        text-align: center;
-        width: 100%;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        box-shadow: inset 0px 15px 8px -10px #CCC;
-        .fa-map-marker-alt {
-            padding-right: 1em;
-            text-align: center;
-            margin-left: auto;
-        }
-        .location_text {
-            text-align: center;
-            margin-right: auto;
-        }
-    }
-    .slogan_and_search {
-        background-color: $grey2;
-        height: 18em;
+@media (min-width: 750px) {
+    header {
+        font-family: Roboto;
         display: flex;
         flex-flow: column;
-        justify-content: space-around;
-        padding-bottom: 2em;
-        #slogan {
-            font-size: 1em;
-            margin-left: 3em;
-            margin-right: 3em;
-            h1 {
-                font-size: 1.5em;
-                margin-left: 3em;
-                margin-right: 3em;
+        margin: 1em;
+        .logo_header {
+            width: 20%;
+            display: flex;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+        #location {
+            display: flex;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            .fa-map-marker-alt {
+                padding-right: 1em;
+                text-align: center;
+            }
+        }
+        .slogan_and_search {
+            height: 12em;
+            display: flex;
+            flex-flow: column;
+            #slogan {
+                font-size: 1em;
+                h1 {
+                    font-size: 1.5em;
+                    margin: 0;
+                }
             }
         }
     }
 }
 
+@media (max-width: 750px) {
+    header {
+        font-family: Roboto;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        .logo_header {
+            width: 45%;
+            display: flex;
+            text-align: center;
+            margin: auto;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+        #location {
+            background-color: $grey1;
+            display: flex;
+            flex-flow: space-between;
+            text-align: center;
+            width: 100%;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            box-shadow: inset 0px 15px 8px -10px #CCC;
+            .fa-map-marker-alt {
+                padding-right: 1em;
+                text-align: center;
+                margin-left: auto;
+            }
+            .location_text {
+                text-align: center;
+                margin-right: auto;
+            }
+        }
+        .slogan_and_search {
+            background-color: $grey2;
+            height: 18em;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+            padding-bottom: 2em;
+            #slogan {
+                font-size: 1em;
+                margin-left: 3em;
+                margin-right: 3em;
+                h1 {
+                    font-size: 1.5em;
+                    margin-left: 3em;
+                    margin-right: 3em;
+                }
+            }
+        }
+    }
+}
