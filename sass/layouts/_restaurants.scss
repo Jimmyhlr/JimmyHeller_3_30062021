@@ -66,17 +66,6 @@
 
 }
 
-.fa-heart {
-    color: black;
-    font-size: 2em;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    &:hover {
-        @include gradient2;
-    }
-}
-
 @media (max-width: 319px) {
     .bloc_img {
         .new {

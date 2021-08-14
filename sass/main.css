@@ -83,6 +83,39 @@ body {
   src: url("../../public/fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 
+/*bouton favoris (coeur fontawesome)*/
+.heart:hover .far,
+.heart .fas {
+  display: none;
+}
+
+.heart:hover .fas {
+  display: inline;
+}
+
+.heart {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 1em;
+  text-align: center;
+}
+
+.heart .far, .heart .fas {
+  font-size: 2em;
+}
+
+.heart .far {
+  color: black;
+}
+
+.heart .fas {
+  background: #FF79DA;
+  background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*bouton header "Explorer nos restaurants" page 1*/
 @media (max-width: 750px) {
   #search {
@@ -134,6 +167,7 @@ body {
 .buttondiv #order {
   background: #FF79DA;
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+  font-family: Roboto;
   padding: 1em;
   border-radius: 3em;
   width: 15em;
@@ -693,21 +727,6 @@ a:active {
   color: black;
 }
 
-.fa-heart {
-  color: black;
-  font-size: 2em;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.fa-heart:hover {
-  color: #FF79DA;
-  color: -moz-linear-gradient(-45deg, #FF79DA 0%, #9356DC 100%);
-  color: -webkit-linear-gradient(-45deg, #FF79DA 0%, #9356DC 100%);
-  color: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
-}
-
 @media (max-width: 319px) {
   .bloc_img .new {
     left: 55%;
@@ -854,6 +873,15 @@ a:active {
 }
 
 @media (min-width: 750px) {
+  .main2 .restaurant_name {
+    margin-bottom: 2em;
+  }
+  .main2 .restaurant_name h2 {
+    font-size: 3em;
+    line-height: 1em;
+    padding-left: 1em;
+    margin: auto;
+  }
   .div_menus {
     display: -webkit-box;
     display: -ms-flexbox;

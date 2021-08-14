@@ -1,3 +1,28 @@
+/*bouton favoris (coeur fontawesome)*/
+.heart:hover .far,
+.heart .fas {
+    display: none;
+}
+.heart:hover .fas {
+    display: inline;
+}
+
+.heart {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1em;
+    text-align: center;
+    .far, .fas {
+        font-size: 2em;
+    }
+    .far {
+        color: black;
+    }
+    .fas {
+        @include gradient2;
+    }
+}
+
 /*bouton header "Explorer nos restaurants" page 1*/
 @media (max-width: 750px) {
     #search {
@@ -43,6 +68,7 @@
     margin: 4em;
     #order {
         @include gradient;
+        font-family: Roboto;
         padding: 1em;
         border-radius: 3em;
         width: 15em;
