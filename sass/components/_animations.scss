@@ -112,3 +112,11 @@
     opacity: 1;
     animation-fill-mode: forwards;
 }
+
+.fadein10 {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 1.8s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}

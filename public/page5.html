@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="../sass/main.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <title>Ohmyfood</title>
     </head>
@@ -11,14 +11,247 @@
 
         <header>
 
+            <!--bouton retour en arrière + logo Ohmyfood-->
+            <div class="header2">
+                <a href="index.html" class="backbutton"><i class="fas fa-arrow-left"></i></a>
+                <a href="index.html"><img src="Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="logo Ohmyfood" class="logo_header2"></a>
+                <div class="blank2"></div>
+            </div>
+
         </header>
 
-        <main>
+        <main>   
+
+        <div class="imgandmain">
+
+            <!--image de fond restaurant-->
+            <div class="backgroundimg4"></div>
+
+            <!--div ENTREES + PLATS + DESSERTS-->
+            <div class="main2">
+
+                <!--nom du restaurant + ajouter aux favoris-->
+                <div class="restaurant_name">
+                    <h2>Le délice des sens</h2>
+                    <div class="heart">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div> 
+
+                <div class="div_menus">
+                <!--carte des entrées-->
+                <div class="menu_category">
+                    <h3>ENTRÉES</h3>
+                    <!--div contenant les entrées-->
+                    <div class="sub_category">
+
+                        <!--entrée 1-->
+                        <a href="#" class="menu_choice fadein1">
+                            <div class="dishandprice">
+                                <!--nom de l'entrée-->
+                                <div class="dish">
+                                    <h4>Tartare de thon</h4>
+                                    Assaisonné au yuzu                         
+                                </div>
+                                <!--prix-->
+                                <div class="price">25€</div>
+                            </div>
+                            <!--animation: valider-->
+                            <div class="check_animation">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </a>
+
+                        <!--entrée 2-->
+                        <a href="#" class="menu_choice fadein2">
+                            <div class="dishandprice">
+                                <!--nom de l'entrée-->
+                                <div class="dish">
+                                    <h4>Bouchée de homard croustillant</h4>
+                                    Et sa farandole de petits légumes
+                                </div>
+                                <!--prix-->
+                                <div class="price">35€</div>
+                            </div>
+                            <!--animation: valider-->
+                            <div class="check_animation">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                            
+                        </a>
+
+                        <!--entrée 3-->
+                        <a href="#" class="menu_choice fadein3">
+                            <div class="dishandprice">
+                                <!--nom de l'entrée-->
+                                <div class="dish">
+                                    <h4>Velouté de cèpes</h4>
+                                    Aux truffes
+                                </div>
+                                <!--prix-->
+                                <div class="price">20€</div>
+                            </div>
+                            <!--animation: valider-->
+                            <div class="check_animation">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                            
+                        </a>
+                    </div>
+                </div>
+
+                <!--carte des plats-->
+                <div class="menu_category">
+                    <h3>PLATS</h3>
+                    <!--div contenant les plats-->
+                    <div class="sub_category">
+                        <!--plat 1-->
+                        <a href="#" class="menu_choice fadein4">
+                            <div class="dishandprice">
+                                <!--nom du plat-->
+                                <div class="dish">
+                                    <h4>Poulet rôti aux herbes de provence</h4>
+                                    et sa crème de truffe
+                                </div>
+                                <!--prix-->
+                                <div class="price">40€</div>
+                                </div>
+                            <!--animation: valider-->
+                            <div class="check_animation">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                            
+                        </a>
+
+                        <!--plat 2-->
+                        <a href="#" class="menu_choice fadein5">
+                            <div class="dishandprice">
+                                <!--nom du plat-->
+                                <div class="dish">
+                                    <h4>Langouste rôtie</h4>
+                                    Et ses légumes de saison
+                                </div>
+                                <!--prix-->
+                                <div class="price">35€</div>
+                            </div>
+                            <!--animation: valider-->
+                            <div class="check_animation">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                            
+                        </av>
+
+                        <!--plat 3-->
+                        <a href="#" class="menu_choice fadein6">
+                            <div class="dishandprice">
+                                <!--nom du plat-->
+                                <div class="dish">
+                                    <h4>Côte de boeuf angus</h4>
+                                    Et sa purée de panais
+                                </div>
+                                <!--prix-->
+                                <div class="price">44€</div>
+                            </div>
+                            <!--animation: valider-->
+                            <div class="check_animation">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                            
+                        </a>
+                    </div>
+                </div>
+
+                <!--carte  des desserts-->
+                <div class="menu_category">
+                    <h3>DESSERTS</h3>
+                    <!--div contenant les desserts-->
+                    <div class="sub_category">
+                        <!--dessert 1-->
+                        <a href="#" class="menu_choice fadein7">
+                            <div class="dishandprice">
+                                <!--nom du dessert-->
+                                <div class="dish">
+                                    <h4>Farandole de desserts</h4>
+                                    Du chef
+                                </div>
+                                <!--prix-->
+                                <div class="price">18€</div>
+                            </div>
+                            <!--animation: valider-->
+                            <div class="check_animation">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                            
+                        </a>
+
+                        <!--dessert 2-->
+                        <a href="#" class="menu_choice fadein8">
+                            <div class="dishandprice">
+                                <!--nom du dessert-->
+                                <div class="dish">
+                                    <h4>Crème brûlée</h4>
+                                    Revisitée
+                                </div>
+                                <!--prix-->
+                                <div class="price">22€</div>
+                            </div>
+                            <!--animation: valider-->
+                            <div class="check_animation">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                            
+                        </a>
+
+                        <!--dessert 3-->
+                        <a href="#" class="menu_choice fadein9">
+                            <div class="dishandprice">
+                                <!--nom du dessert-->
+                                <div class="dish">
+                                    <h4>Tiramisu</h4>
+                                    À la noisette
+                                </div>
+                                <!--prix-->
+                                <div class="price">23€</div>
+                            </div>
+                            <!--animation: valider-->
+                            <div class="check_animation">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                            
+                        </a>
+                    </div>                    
+                </div>
+                </div>
+
+            </div>
+
+            <div class="buttondiv">
+                <a href="#" id="order">Commander</a>
+            </div>
+
+        </div>
 
         </main>
 
         <footer>
-            
+
+            <!--logo ohmyfood footer-->
+            <div class="logo_footer">
+                ohmyfood
+            </div>
+            <!--liste footer-->
+            <ul>
+                <!--proposer un restaurant-->
+                <li>
+                    <a href="#" class="footer_link"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+                </li>
+                <!--devenir partenaire-->
+                <li>
+                    <a href="#" class="footer_link"><i class="fas fa-handshake"></i>Devenir partenaire</a>
+                </li>
+                <!--mentions légales-->
+                <li>
+                    <a href="#" class="footer_link">Mentions légales</a>
+                </li>
+                <!--Contact-->
+                <li>
+                    <a href="#" class="footer_link">Contact</a>
+                </li>
+            </ul>
+
         </footer>
 
     </body>
