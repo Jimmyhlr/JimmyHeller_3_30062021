@@ -74,13 +74,13 @@ body {
 /*logo et titres*/
 @font-face {
   font-family: "Roboto";
-  src: url("../../public/fonts/Roboto/Roboto-Regular.ttf");
+  src: url("fonts/Roboto/Roboto-Regular.ttf");
 }
 
 /*texte*/
 @font-face {
   font-family: "Shrikhand";
-  src: url("../../public/fonts/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 
 /*bouton favoris (coeur fontawesome)*/
