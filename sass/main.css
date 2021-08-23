@@ -793,8 +793,9 @@ a:active {
   text-align: center;
   font-weight: bold;
   position: absolute;
-  top: 10%;
-  left: 75%;
+  top: 20px;
+  right: 20px;
+  border-radius: 3px;
 }
 
 .bloc_txt {
@@ -812,24 +813,6 @@ a:active {
 .restaurant_name {
   line-height: 0.5em;
   color: black;
-}
-
-@media (max-width: 319px) {
-  .bloc_img .new {
-    left: 55%;
-  }
-}
-
-@media (min-width: 319px) and (max-width: 367px) {
-  .bloc_img .new {
-    left: 65%;
-  }
-}
-
-@media (min-width: 367px) {
-  .bloc_img .new {
-    left: 70%;
-  }
 }
 
 @media (min-width: 750px) {
