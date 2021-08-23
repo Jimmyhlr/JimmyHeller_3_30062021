@@ -83,38 +83,6 @@ body {
   src: url("https://jimmyhlr.github.io/JimmyHeller_3_30062021/public/fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 
-/*bouton favoris (coeur fontawesome)*/
-.heart:hover .far, .heart .fas {
-  display: none;
-}
-
-.heart:hover .fas {
-  display: inline;
-}
-
-.heart {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 1em;
-  text-align: center;
-}
-
-.heart .far, .heart .fas {
-  font-size: 2em;
-}
-
-.heart .far {
-  color: black;
-}
-
-.heart .fas {
-  background: #FF79DA;
-  background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /*bouton header "Explorer nos restaurants" page 1*/
 @media (max-width: 750px) {
   #search {
@@ -283,9 +251,61 @@ a:active {
   text-decoration: none;
 }
 
+/*bouton favoris (coeur fontawesome)*/
+.heart:hover .far, .heart .fas {
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.heart:hover .fas, .heart .far {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.heart {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 2em;
+  padding-right: 1.5em;
+  margin-right: 1em;
+  text-align: center;
+}
+
+.heart .far, .heart .fas {
+  position: absolute;
+  font-size: 2em;
+}
+
+.heart .far {
+  color: black;
+}
+
+.heart .fas {
+  background: #FF79DA;
+  background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*animation valider menu du restaurant*/
+.dishandprice {
+  width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .menu_choice:hover .dishandprice {
-  max-width: 82%;
+  width: 82%;
 }
 
 .menu_choice:hover .dishandprice .dish {
@@ -297,20 +317,10 @@ a:active {
 }
 
 .menu_choice:hover .check_animation {
-  background-color: #99E2D0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 18%;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 1em;
-  -webkit-transition: -webkit-transform;
-  transition: -webkit-transform;
-  transition: transform;
-  transition: transform, -webkit-transform;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   -webkit-transform-origin: 100% 0%;
           transform-origin: 100% 0%;
   -webkit-transform: scaleX(1);
@@ -318,6 +328,8 @@ a:active {
 }
 
 .menu_choice:hover .check_animation .fa-check-circle {
+  opacity: 1;
+  color: white;
   margin: auto;
   font-size: 1.5em;
   -webkit-transform: rotate(0deg);
@@ -329,16 +341,28 @@ a:active {
 }
 
 .check_animation {
+  position: absolute;
+  right: 0;
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 18%;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
 }
 
 .check_animation .fa-check-circle {
-  color: white;
+  opacity: 0;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
@@ -909,6 +933,7 @@ a:active {
 }
 
 .main2 .menu_category .sub_category .menu_choice {
+  position: relative;
   background-color: white;
   border-radius: 1em;
   display: -webkit-box;
@@ -931,7 +956,6 @@ a:active {
   display: flex;
   height: 5em;
   margin-bottom: 1em;
-  width: 100%;
 }
 
 .main2 .menu_category .sub_category .menu_choice .dishandprice .dish {

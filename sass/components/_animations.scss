@@ -1,7 +1,44 @@
+/*bouton favoris (coeur fontawesome)*/
+.heart:hover .far, .heart .fas {
+    transition: transform;
+    transition-duration: 0.4s;
+    transform-origin: 50% 100%;
+    transform: scale(0);
+}
+
+.heart:hover .fas, .heart .far {
+    transform: scale(1);
+}
+
+.heart {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 2em;
+    padding-right: 1.5em;
+    margin-right: 1em;
+    text-align: center;
+    .far, .fas {
+        position: absolute;
+        font-size: 2em;
+    }
+    .far {
+        color: black;
+    }
+    .fas {
+        @include gradient2;
+    }
+}
+
 /*animation valider menu du restaurant*/
+.dishandprice {
+    width: 100%;
+    transition: all 0.3s;
+}
+
 .menu_choice:hover {
     .dishandprice {
-        max-width: 82%;              
+        width: 82%;
         .dish {
             width: 90%;
         }
@@ -10,18 +47,12 @@
         }
     }
     .check_animation {
-        background-color: $tertiary;
-        display: flex;
-        height: 100%;
-        width: 18%;
-        border-top-right-radius: 1em;
-        border-bottom-right-radius: 1em;
-
-        transition: transform;
-        transition-duration: 0.3s;
+        transition: transform 0.3s;
         transform-origin: 100% 0%;
         transform: scaleX(1);
         .fa-check-circle {
+            opacity: 1;
+            color: white;
             margin: auto;
             font-size: 1.5em;
             transform: rotate(0deg);
@@ -32,10 +63,20 @@
 }
 
 .check_animation {
+    position: absolute;
+    right: 0;
+    background-color: $tertiary;
+    display: flex;
+    height: 100%;
+    width: 18%;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+        
     transition: transform 0.3s;
+    transform-origin: 100% 0%;
     transform: scaleX(0);
     .fa-check-circle {
-        color: white;
+        opacity: 0;
         transform: rotate(-180deg);
     }
 }
