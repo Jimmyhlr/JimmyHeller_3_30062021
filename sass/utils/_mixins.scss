@@ -18,6 +18,13 @@
     background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
 }
 
+@mixin gradient3 {
+    background: #fc83da;
+    background: -moz-linear-gradient(-45deg, #fc83da 0%, #b274ff 100%);
+    background: -webkit-linear-gradient(-45deg, #fc83da 0%, #b274ff 100%);
+    background: linear-gradient(135deg, #fc83da 0%, #b274ff 100%);
+}
+
 @mixin gradient2 {
     background: #FF79DA;
     background: -moz-linear-gradient(-45deg, #FF79DA 0%, #9356DC 100%);

@@ -37,7 +37,8 @@
             color: white;
         }
         &:hover {
-            background-color: $primary;
+            @include gradient3;
+            box-shadow: 1px 1px 10px black;
         }
     }
 }
@@ -80,7 +81,8 @@
             color: white;
         }
         &:hover {
-            background-color: $primary;
+            @include gradient3;
+            box-shadow: 1px 1px 10px black;
         }
     }
 }
